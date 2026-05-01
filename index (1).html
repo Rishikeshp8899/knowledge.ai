@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KNOWLEDGE.AI | Cyberpunk Builder Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --neon-pink: #ff00ff; --neon-blue: #00f3ff; --dark-bg: #050505; }
+        body { background-color: var(--dark-bg); color: #fff; font-family: 'Rajdhani', sans-serif; overflow-x: hidden; }
+        .cyber-font { font-family: 'Orbitron', sans-serif; }
+        .neon-border { border: 2px solid var(--neon-blue); box-shadow: 0 0 15px var(--neon-blue), inset 0 0 5px var(--neon-blue); }
+        .neon-text-pink { text-shadow: 0 0 10px var(--neon-pink); color: var(--neon-pink); }
+        .cyber-card { background: rgba(20, 20, 20, 0.8); border-left: 4px solid var(--neon-pink); clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%); transition: all 0.3s ease; }
+        .syllabus-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .syllabus-item { border: 1px solid rgba(0, 243, 255, 0.2); padding: 20px; background: rgba(255, 255, 255, 0.02); position: relative; overflow: hidden; }
+        .syllabus-item::before { content: ""; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--neon-blue); }
+        body::before { content: " "; display: block; position: fixed; top: 0; left: 0; bottom: 0; right: 0; background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06)); z-index: 9999; pointer-events: none; background-size: 100% 4px, 3px 100%; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="relative z-10 text-center max-w-5xl" data-aos="zoom-in">
+            <h2 class="cyber-font text-blue-400 tracking-[0.5em] mb-4 text-sm">SYSTEM STATUS: ONLINE</h2>
+            <h1 class="cyber-font text-5xl md:text-8xl font-black mb-6 uppercase">Knowledge.<span class="neon-text-pink">AI</span></h1>
+            <p class="text-xl md:text-3xl font-light tracking-wide text-gray-300 mb-10">1 Year Masterclass: DS, ML & GEN AI <br><span class="text-cyan-400">Weekend Only | Hinglish | For Professionals</span></p>
+            <a href="#syllabus" class="neon-border px-10 py-4 cyber-font font-bold hover:bg-cyan-500 hover:text-black transition-all">VIEW SYLLABUS</a>
+        </div>
+    </section>
+
+    <!-- Syllabus Section -->
+    <section id="syllabus" class="py-20 px-6 max-w-7xl mx-auto">
+        <h2 class="cyber-font text-4xl mb-12 text-center text-pink-500" data-aos="fade-up">CURRICULUM DEPLOYMENT</h2>
+        
+        <div class="space-y-12">
+            <!-- Quarter 1 -->
+            <div data-aos="fade-right">
+                <h3 class="cyber-font text-xl mb-4 text-cyan-400">Q1: FOUNDATION & SYSTEM LOGIC</h3>
+                <div class="syllabus-grid">
+                    <div class="syllabus-item">
+                        <h4 class="font-bold mb-2 text-white">Advanced Programming</h4>
+                        <p class="text-gray-400 text-sm">Python for Data Science & Java for Scalable Backends. Focus on logic building and data structures.</p>
+                    </div>
+                    <div class="syllabus-item">
+                        <h4 class="font-bold mb-2 text-white">Mathematical Rigor</h4>
+                        <p class="text-gray-400 text-sm">Linear Algebra, Calculus, and Statistics for ML models. <i>Basics se Advance tak.</i></p>
+                    </div>
+                    <div class="syllabus-item">
+                        <h4 class="font-bold mb-2 text-white">System Design</h4>
+                        <p class="text-gray-400 text-sm">Learning how to handle millions of requests using Redis and Kafka.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quarter 2 -->
+            <div data-aos="fade-left">
+                <h3 class="cyber-font text-xl mb-4 text-pink-500">Q2: MACHINE LEARNING & DEEP LEARNING</h3>
+                <div class="syllabus-grid">
+                    <div class="syllabus-item">
+                        <h4 class="font-bold mb-2 text-white">Classical ML</h4>
+                        <p class="text-gray-400 text-sm">Regression, Trees, Clustering, and <b>Reinforcement Learning</b> (Epsilon-Greedy, UCB1).</p>
+                    </div>
+                    <div class="syllabus-item">
+                        <h4 class="font-bold mb-2 text-white">Neural Networks</h4>
+                        <p class="text-gray-400 text-sm">PyTorch and TensorFlow. Building CNNs, RNNs, and LSTMs from scratch.</p>
+                    </div>
+                    <div class="syllabus-item">
+                        <h4 class="font-bold mb-2 text-white">MLOps</h4>
+                        <p class="text-gray-400 text-sm">Deploying models using Docker, Kubernetes, and monitoring performance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quarter 3 -->
+            <div data-aos="fade-right">
+                <h3 class="cyber-font text-xl mb-4 text-cyan-400">Q3: GENERATIVE AI & LLMs</h3>
+                <div class="syllabus-grid">
+                    <div class="syllabus-item">
+                        <h4 class="font-bold mb-2 text-white">Transformer Architectures</h4>
+                        <p class="text-gray-400 text-sm">Understanding BERT, GPT, and T5. How Attention Mechanism works.</p>
+                    </div>
+                    <div class="syllabus-item">
+                        <h4 class="font-bold mb-2 text-white">RAG Systems</h4>
+                        <p class="text-gray-400 text-sm">Retrieval Augmented Generation using Vector DBs (Pinecone/Milvus).</p>
+                    </div>
+                    <div class="syllabus-item">
+                        <h4 class="font-bold mb-2 text-white">Multi-Modal AI</h4>
+                        <p class="text-gray-400 text-sm">Text-to-Image, Text-to-Video, and Voice synthesis integration.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quarter 4 -->
+            <div data-aos="fade-left">
+                <h3 class="cyber-font text-xl mb-4 text-pink-500">Q4: THE BUILDER CAPSTONE</h3>
+                <div class="syllabus-grid">
+                    <div class="syllabus-item">
+                        <h4 class="font-bold mb-2 text-white">Agentic Workflows</h4>
+                        <p class="text-gray-400 text-sm">Building autonomous AI agents using LangChain and CrewAI.</p>
+                    </div>
+                    <div class="syllabus-item">
+                        <h4 class="font-bold mb-2 text-white">Commercial Scaling</h4>
+                        <p class="text-gray-400 text-sm">How to optimize token costs and scale your AI product to 100k users.</p>
+                    </div>
+                    <div class="syllabus-item">
+                        <h4 class="font-bold mb-2 text-white">Final Build</h4>
+                        <p class="text-gray-400 text-sm">Shipping a production-grade AI system end-to-end. <i>Asli builder bano.</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekend Table & Pricing remain below -->
+    <section class="py-20 px-6 max-w-4xl mx-auto">
+        <div class="cyber-card p-10 border border-white/10" data-aos="flip-up">
+            <h3 class="cyber-font text-2xl mb-6 text-center text-cyan-400">6 HOURS / WEEKEND</h3>
+            <div class="grid grid-cols-2 text-center gap-4">
+                <div>
+                    <p class="text-gray-400">Saturday</p>
+                    <p class="text-2xl font-bold">10 AM - 1 PM</p>
+                </div>
+                <div>
+                    <p class="text-gray-400">Sunday</p>
+                    <p class="text-2xl font-bold">10 AM - 1 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing and Form -->
+    <section class="py-20 px-6 text-center" data-aos="fade-up">
+        <h2 class="cyber-font text-4xl mb-8">₹24,999 / YEAR</h2>
+        <a href="#apply" class="bg-pink-600 px-12 py-5 cyber-font font-bold text-xl hover:shadow-[0_0_30px_rgba(255,0,255,0.6)] transition-all">JOIN WAITLIST</a>
+    </section>
+
+    <section id="apply" class="py-20 px-6 max-w-3xl mx-auto" data-aos="fade-up">
+        <div class="glass p-10 border border-cyan-500/30">
+            <h2 class="cyber-font text-3xl mb-8 text-center">APPLICATION UPLINK</h2>
+            <form class="space-y-6">
+                <input type="text" class="w-full bg-white/5 border border-white/20 p-4 outline-none focus:border-pink-500" placeholder="NAME">
+                <input type="email" class="w-full bg-white/5 border border-white/20 p-4 outline-none focus:border-pink-500" placeholder="WORK EMAIL">
+                <textarea class="w-full bg-white/5 border border-white/20 p-4 outline-none focus:border-pink-500 h-32" placeholder="CURRENT TECH STACK & GOALS"></textarea>
+                <button type="submit" class="w-full bg-cyan-600 py-4 cyber-font font-bold text-xl hover:bg-cyan-700">SUBMIT DATA</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-10 border-t border-white/10 text-center text-gray-600 cyber-font text-xs">
+        &copy; 2026 KNOWLEDGE.AI // ARCHITECTED BY RISHIKESH PATIL
+    </footer>
+
+    <script>AOS.init({ duration: 1000, once: false });</script>
+</body>
+</html>
