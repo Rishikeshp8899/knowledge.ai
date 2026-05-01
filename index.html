@@ -139,17 +139,57 @@
         <a href="#apply" class="bg-pink-600 px-12 py-5 cyber-font font-bold text-xl hover:shadow-[0_0_30px_rgba(255,0,255,0.6)] transition-all">JOIN WAITLIST</a>
     </section>
 
-    <section id="apply" class="py-20 px-6 max-w-3xl mx-auto" data-aos="fade-up">
-        <div class="glass p-10 border border-cyan-500/30">
-            <h2 class="cyber-font text-3xl mb-8 text-center">APPLICATION UPLINK</h2>
-            <form class="space-y-6">
-                <input type="text" class="w-full bg-white/5 border border-white/20 p-4 outline-none focus:border-pink-500" placeholder="NAME">
-                <input type="email" class="w-full bg-white/5 border border-white/20 p-4 outline-none focus:border-pink-500" placeholder="WORK EMAIL">
-                <textarea class="w-full bg-white/5 border border-white/20 p-4 outline-none focus:border-pink-500 h-32" placeholder="CURRENT TECH STACK & GOALS"></textarea>
-                <button type="submit" class="w-full bg-cyan-600 py-4 cyber-font font-bold text-xl hover:bg-cyan-700">SUBMIT DATA</button>
-            </form>
-        </div>
-    </section>
+  <section id="apply" class="py-20 px-6 max-w-3xl mx-auto" data-aos="fade-up">
+    <div class="glass p-10 border border-cyan-500/30 relative overflow-hidden">
+        <!-- Subtle background glow for the form container -->
+        <div class="absolute -top-10 -right-10 w-32 h-32 bg-pink-500/10 blur-3xl"></div>
+        
+        <h2 class="cyber-font text-3xl mb-8 text-center tracking-widest">
+            APPLICATION <span class="neon-text-pink">UPLINK</span>
+        </h2>
+        
+        <form action="https://formspree.io/f/xwvykzab" method="POST" class="space-y-6">
+            <!-- Name Input -->
+            <div>
+                <label class="block cyber-font text-xs mb-2 text-cyan-400">NAME</label>
+                <input 
+                    type="text" 
+                    name="name" 
+                    required
+                    class="w-full bg-white/5 border border-white/20 p-4 outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-all placeholder:text-gray-600" 
+                    placeholder="ENTER FULL NAME">
+            </div>
+
+            <!-- Email Input -->
+            <div>
+                <label class="block cyber-font text-xs mb-2 text-cyan-400">EMAIL</label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    required
+                    class="w-full bg-white/5 border border-white/20 p-4 outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-all placeholder:text-gray-600" 
+                    placeholder="USER@DOMAIN.COM">
+            </div>
+
+            <!-- Experience/Goals Textarea -->
+            <div>
+                <label class="block cyber-font text-xs mb-2 text-cyan-400">TECH STACK & OBJECTIVES</label>
+                <textarea 
+                    name="message" 
+                    required
+                    class="w-full bg-white/5 border border-white/20 p-4 outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-all h-32 placeholder:text-gray-600" 
+                    placeholder="TELL ME WHAT YOU WANT TO BUILD..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button 
+                type="submit" 
+                class="w-full bg-cyan-600 py-4 cyber-font font-bold text-xl hover:bg-cyan-400 hover:text-black transition-all duration-300 shadow-[0_0_15px_rgba(8,145,178,0.3)] hover:shadow-[0_0_25px_rgba(34,211,238,0.6)]">
+                TRANSMIT DATA
+            </button>
+        </form>
+    </div>
+</section>
 
     <footer class="py-10 border-t border-white/10 text-center text-gray-600 cyber-font text-xs">
         &copy; 2026 KNOWLEDGE.AI // ARCHITECTED BY RISHIKESH PATIL
